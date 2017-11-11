@@ -1,0 +1,10 @@
+{
+
+    "extends": [
+        "futagozaryuu/esnext",
+        "futagozaryuu/jsdoc"
+    ],
+
+    "root": true
+
+}
