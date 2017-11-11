@@ -1,0 +1,47 @@
+{
+    "name": "hup",
+    "version": "0.0.0",
+    "description": "A base class for applications that need setting and plugin management baked-in.",
+    "keywords": [
+        "class",
+        "application",
+        "setting",
+        "plugin",
+        "management"
+    ],
+    "repository": "futagoza/hup",
+    "bugs": "https://github.com/futagoza/hup/issues",
+    "license": "MIT",
+    "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
+    "files": [
+        "dist",
+        "lib"
+    ],
+    "main": "lib/hup.js",
+    "module": "dist/hup.mjs",
+    "browser": "dist/hup.js",
+    "scripts": {
+        "lint": "eslint --cache src rollup.config.js",
+        "build": "babel src -d lib",
+        "pack": "rollup -c",
+        "postversion": "git push --follow-tags && npm publish"
+    },
+    "dependencies": {
+        "babel-polyfill": "7.0.0-beta.3",
+        "babel-runtime": "7.0.0-beta.3"
+    },
+    "devDependencies": {
+        "eslint": "4.10.x",
+        "eslint-config-futagozaryuu": "3.6.x",
+        "babel-cli": "7.0.0-beta.3",
+        "babel-preset-futagozaryuu": "2.11.x",
+        "dedent": "0.7.x",
+        "rollup": "0.51.x",
+        "rollup-plugin-json": "2.3.x",
+        "rollup-plugin-babel": "3.0.x",
+        "rollup-plugin-minify": "1.0.x"
+    },
+    "engines": {
+        "node": ">= 4.0.0"
+    }
+}
