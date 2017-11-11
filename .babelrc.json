@@ -1,0 +1,14 @@
+{
+
+    "presets": [
+        [
+            "futagozaryuu",
+            {
+                "runtime": true
+            }
+        ]
+    ],
+
+    "sourceMaps": true
+
+}
