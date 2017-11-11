@@ -21,7 +21,7 @@
     "module": "dist/hup.mjs",
     "browser": "dist/hup.js",
     "scripts": {
-        "lint": "eslint --cache src rollup.config.js",
+        "lint": "eslint --cache .",
         "build": "babel src -d lib",
         "pack": "rollup -c",
         "postversion": "git push --follow-tags && npm publish"
